@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#masterhead{
+    width: 100%;
+}
+
+
+.top-bar-right{
+    display: flex;
+   text-decoration: none;
+}
+
+.container-fluid{
+    background-color: none;
+}
+
+.button-blue{
+    background-color: #0090ff;
+    width: 50%;
+}
+
+.sign-in{
+    width: 50%;
+
+}
+
+.top-bar-right{
+    display: flex;
+    width: 100%;
+}
+
+.navbar .nav-item:not(:last-child) {
+    margin-right: 35px;
+  }
+   
+  .dropdown-toggle::after {
+     transition: transform 0.15s linear; 
+  }
+   
+  .show.dropdown .dropdown-toggle::after {
+    transform: translateY(3px);
+  }
+
+  .dropdown-menu {
+    margin-top: 0;
+  }
+
+.marcas-logos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.customers{
+    background-color: #ffddc2;
+    padding: 2.5rem 0 4rem;
+}
+
+.block-options{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    
+}
