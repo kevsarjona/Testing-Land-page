@@ -3,65 +3,122 @@
     margin: 0;
 }
 
+@font-face {
+    font-family: 'Abril Fatface' ;
+    src: url('fonts/AbrilFatface-Regular.ttf') format('truetype');
+    
+}
 
 body{
     background-color: rgb(255, 255, 255);
-    font-family: sans-serif;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header{
-    display: flex;
     height: 80px;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
+    overflow: auto;
+}
+
+
+.hero-news{
+    background-color: rgb(183, 223, 250);
 }
 
 #masterhead{
     width: 100%;
+    -webkit-transition: background-color .4s ease-in-out;
+    transition: background-color .4s ease-in-out;
+    
+}
+
+.navbar-nav{
+    background-color: transparent;
+    margin-left: 210px;
+}
+
+.navbar-brand{
+    margin-left: 45px;
+}
+
+
+
+.hero-news{
+    padding-top: 15rem;
+    overflow: hidden;
+}
+
+.hero-title, .hero-buttons, .hero-text{
+    margin-left: 300px;
+    margin-right: 1000px;
+
+}
+
+.hero-title h1{
+    font-size: 80px;
+    font-family: 'AbrilFatface-Regular';
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.hero-text p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 28px;
+}
+
+.image1{
+    width: 100%;
+    top: -117px;
+    margin-left: auto;
+    padding-left: 1000px;
 }
 
 
 .top-bar-right{
     display: flex;
    text-decoration: none;
+   margin-right: 45px;
+   
 }
+
 
 .container-fluid{
-    background-color: none;
+    background-color: transparent;
 }
 
-.button-blue{
-    background-color: #0090ff;
-    width: 50%;
+.btn {
+    border-radius: 45px; 
 }
 
-.sign-in{
-    width: 50%;
-
+.btn-dark{
+    padding: 18px 32px;
 }
 
-.top-bar-right{
-    display: flex;
-    width: 100%;
+.nav-link{
+    text-decoration: none;
+    color: black;
 }
+
 
 .navbar .nav-item:not(:last-child) {
     margin-right: 35px;
-  }
+}
    
-  .dropdown-toggle::after {
-     transition: transform 0.15s linear; 
-  }
-   
-  .show.dropdown .dropdown-toggle::after {
-    transform: translateY(3px);
-  }
 
-  .dropdown-menu {
+.dropdown-toggle::after {
+     transition: transform 0.15s linear; 
+}
+   
+.show.dropdown .dropdown-toggle::after {
+    transform: translateY(3px);
+}
+
+.dropdown-menu {
     margin-top: 0;
-  }
+}
 
 .marcas-logos{
     display: flex;
@@ -70,13 +127,67 @@ header{
     width: 100%;
 }
 
+.logo{
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+.text-customers{
+    text-transform: uppercase;
+    opacity: 0.6;
+    font-size: .875rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
 .customers{
     background-color: #ffddc2;
     padding: 2.5rem 0 4rem;
+    min-height: 1px;
+    overflow: visible;
+    padding-top: 3.7rem;
+    padding-bottom: 3.5rem;
+    z-index: 12;
 }
 
 .block-options{
     padding-top: 8rem;
     padding-bottom: 8rem;
-    
+    text-align: center;
+    margin: 0px 220px;
 }
+
+.block-options h2{
+    font-family: 'AbrilFatface-Regular';
+    font-weight:bold;
+    font-size: 60px;
+}
+
+.descrip-options{
+    font-size: 22px;
+    margin-left: 380px;
+    margin-right: 380px;
+    padding-bottom: 15px;
+}
+
+.block-columns{
+    display: flex;
+}
+
+.column{
+    font-size: 18px;
+    margin: 0px 0px 48px;
+}
+
+.column h4{
+    padding-top: 15px;
+}
+
+.column p{
+    
+    margin: 0px 50px 28px 50px;
+}
+
+
+
